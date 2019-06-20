@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA20CFFA22BC29F7009007CF /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA20CFF722BC29F6009007CF /* Starjhol.ttf */; };
+		AA20CFFB22BC29F7009007CF /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA20CFF822BC29F6009007CF /* Starjout.ttf */; };
+		AA20CFFC22BC29F7009007CF /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA20CFF922BC29F6009007CF /* Starjedi.ttf */; };
 		AA5339B522B8CA35001B1667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5339B422B8CA35001B1667 /* AppDelegate.swift */; };
-		AA5339B722B8CA35001B1667 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5339B622B8CA35001B1667 /* ViewController.swift */; };
+		AA5339B722B8CA35001B1667 /* SelectCharacterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5339B622B8CA35001B1667 /* SelectCharacterVC.swift */; };
 		AA5339BA22B8CA35001B1667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5339B822B8CA35001B1667 /* Main.storyboard */; };
 		AA5339BC22B8CA36001B1667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5339BB22B8CA36001B1667 /* Assets.xcassets */; };
 		AA5339BF22B8CA36001B1667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5339BD22B8CA36001B1667 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA20CFF722BC29F6009007CF /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
+		AA20CFF822BC29F6009007CF /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
+		AA20CFF922BC29F6009007CF /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
 		AA5339B122B8CA35001B1667 /* StarWarsTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5339B422B8CA35001B1667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA5339B622B8CA35001B1667 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA5339B622B8CA35001B1667 /* SelectCharacterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCharacterVC.swift; sourceTree = "<group>"; };
 		AA5339B922B8CA35001B1667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA5339BB22B8CA36001B1667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA5339BE22B8CA36001B1667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +41,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA20CFFD22BC2A13009007CF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AA20CFF922BC29F6009007CF /* Starjedi.ttf */,
+				AA20CFF722BC29F6009007CF /* Starjhol.ttf */,
+				AA20CFF822BC29F6009007CF /* Starjout.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AA20CFFE22BC2A24009007CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA20CFFD22BC2A13009007CF /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA20CFFF22BC2A5C009007CF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AA20D00022BC2A71009007CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA20D00122BC2A78009007CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		AA5339A822B8CA35001B1667 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +99,12 @@
 		AA5339B322B8CA35001B1667 /* StarWarsTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				AA20D00122BC2A78009007CF /* Model */,
+				AA20D00022BC2A71009007CF /* View */,
+				AA20CFFF22BC2A5C009007CF /* Controller */,
 				AA5339B422B8CA35001B1667 /* AppDelegate.swift */,
-				AA5339B622B8CA35001B1667 /* ViewController.swift */,
+				AA5339B622B8CA35001B1667 /* SelectCharacterVC.swift */,
+				AA20CFFE22BC2A24009007CF /* Resources */,
 				AA5339B822B8CA35001B1667 /* Main.storyboard */,
 				AA5339BB22B8CA36001B1667 /* Assets.xcassets */,
 				AA5339BD22B8CA36001B1667 /* LaunchScreen.storyboard */,
@@ -125,6 +174,9 @@
 				AA5339BF22B8CA36001B1667 /* LaunchScreen.storyboard in Resources */,
 				AA5339BC22B8CA36001B1667 /* Assets.xcassets in Resources */,
 				AA5339BA22B8CA35001B1667 /* Main.storyboard in Resources */,
+				AA20CFFB22BC29F7009007CF /* Starjout.ttf in Resources */,
+				AA20CFFC22BC29F7009007CF /* Starjedi.ttf in Resources */,
+				AA20CFFA22BC29F7009007CF /* Starjhol.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA5339B722B8CA35001B1667 /* ViewController.swift in Sources */,
+				AA5339B722B8CA35001B1667 /* SelectCharacterVC.swift in Sources */,
 				AA5339B522B8CA35001B1667 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
