@@ -35,7 +35,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Swl-m7-jVt">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Swl-m7-jVt" customClass="BlackBgView" customModule="StarWarsTrivia" customModuleProvider="target">
                                 <rect key="frame" x="20" y="208.5" width="335" height="250"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="kwf-Vs-L98">
@@ -173,13 +173,26 @@
                                     <constraint firstAttribute="height" constant="250" id="jO0-HC-p4Z"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwY-uy-gTc" customClass="BlackBgButton" customModule="StarWarsTrivia" customModuleProvider="target">
+                                <rect key="frame" x="83.5" y="604" width="208" height="43"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.60142872430000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="TDs-XY-xSs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="19"/>
+                                <state key="normal" title="$ Random #">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hwY-uy-gTc" secondAttribute="bottom" constant="20" id="0gT-kM-KLt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZmX-jn-f23" secondAttribute="trailing" constant="20" id="1ZN-Mn-HeD"/>
                             <constraint firstItem="HBk-5i-lSy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3St-d6-nH0"/>
                             <constraint firstItem="HBk-5i-lSy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="D1u-8e-5hY"/>
                             <constraint firstItem="ZmX-jn-f23" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EpR-jW-Ibc"/>
+                            <constraint firstItem="hwY-uy-gTc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MNq-gr-SY3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HBk-5i-lSy" secondAttribute="trailing" id="UEp-lg-FgT"/>
                             <constraint firstItem="Swl-m7-jVt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bYq-SM-TXA"/>
                             <constraint firstItem="ZmX-jn-f23" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="dvR-WL-wn7"/>
@@ -190,9 +203,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="jzh-Fi-HC1"/>
-                    <connections>
-                        <outlet property="stackBg" destination="Swl-m7-jVt" id="7hs-qB-ZhM"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
